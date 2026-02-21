@@ -1,12 +1,12 @@
 import org.code.theater.*;
 import org.code.media.*;
 
-/*
- * Represents an image that can be modified with filters and effects
- */
+
+ //Represents an image that can be modified with filters and effects
+ 
 public class ImageFilter extends ImagePlus {
 
-    /** Constructor */
+    // Constructor
     public ImageFilter(String fileName) {
         super(fileName);
     }
@@ -112,9 +112,9 @@ public class ImageFilter extends ImagePlus {
         }
     }
 
-    /*
-     * Mirrors image across vertical center line
-     */
+    
+    // Mirrors image across vertical center line
+     
     public void mirrorVertical() {
 
         Pixel[][] pixels = getImagePixels();
@@ -129,6 +129,8 @@ public class ImageFilter extends ImagePlus {
             }
         }
     }
+    
+    // Saturates the image’s color intensity by adjusting each pixel’s RGB values
    public void saturate(int factor) {
     Pixel[][] pixels = getImagePixels();
 
