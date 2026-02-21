@@ -18,7 +18,6 @@ public class TennisScene extends Scene {
   private static final int SAMPLE_RATE = 44100;
 
   /*
-   * Constructor
    * Preconditions: images must not be null
    * Postconditions: images stored for when the scene is played
    */
